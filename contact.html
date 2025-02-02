@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio.Contact</title>
+    <style>
+        /* CSS Reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(50, 49, 49);
+            background-size: 100% 100%;
+            color: white;
+
+        }
+
+        .btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 8px 4px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .btn:hover,
+        .btn.active {
+            background-color: grey;
+            text-decoration: underline;
+
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 100px 200px;
+            padding: 50px 50px;
+            width: 33%;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+
+        .form-group {
+            color: white;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .btn {
+            margin: 30px 30px;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Leave a notification!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                Name : <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                Age : <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+            <label for="gender">Gender : </label>
+            <select class="user">
+                <option value="Select">Select</option>
+                <option value="Male">Male</option>
+                <option value="Female" selected>Female</option>
+                <option value="Other" selected>Other</option>
+            </select>
+            </div>
+            <div class="form-group">
+                Address : <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <div class="form-group">
+                Weight: <input type="text" name="" placeholder="Enter your Weight">
+            </div>
+            <button class="btn">Reset Now</button>
+            <button class="btn">Submit Now</button>
+
+        </form>
+</body>
+</html>
